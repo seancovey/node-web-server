@@ -60,6 +60,12 @@ app.get('/bad', (req, res) =>
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle : 'PROJECTS'
+    });
+});
+
 app.listen(port, () =>
 {
     console.log('Server is up on port 3000.');
